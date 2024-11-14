@@ -1,1 +1,95 @@
+body {
+    font-family: 'Georgia', serif;
+    background: #0a0a0a url('https://t4.ftcdn.net/jpg/02/43/75/73/240_F_243757367_gBpS6R5c8DB7pL5gw9gi9KXlzFfbdZOA.jpg') repeat;
+    animation: twinkling 200s infinite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #d1e8ff;
+}
+
+@keyframes twinkling {
+    from { background-position: 0 0; }
+    to { background-position: -10000px 5000px; }
+}
+
+
+.clouds {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background: url('https://www.pngkey.com/detail/u2a9o0u2w7o0t4t4_clouds-realistic-cloud-clouds-png/') repeat-x;
+    animation: moveClouds 60s linear infinite;
+    opacity: 0.5;
+}
+
+@keyframes moveClouds {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+
+
+h1 {
+    font-size: 2em;
+    color: #73a9ff;
+    transition: text-shadow 0.3s;
+}
+
+h1:hover {
+    text-shadow: 0 0 10px #73a9ff;
+}
+
+
+.dedicatoria {
+    color: #73a9ff; 
+    text-align: center;
+    font-style: italic;
+    font-size: 1.2em;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: #1a1a2e; 
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 112, 192, 0.7); 
+    max-width: 600px;
+    transform: translateY(-50px);
+    opacity: 0;
+    animation: slideDown 1.5s forwards;
+}
+
+@keyframes slideDown {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+.poem-container {
+    max-width: 700px;
+    padding: 2rem;
+    text-align: center;
+    line-height: 1.8;
+    border: 1px solid #1a1a2e;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 112, 192, 0.7);
+    background-color: #1a1a2e;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+
+p {
+    font-size: 1.2em;
+}
 
