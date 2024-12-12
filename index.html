@@ -4,66 +4,143 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Estrellita</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background: #0a0a0a url('https://t4.ftcdn.net/jpg/02/43/75/73/240_F_243757367_gBpS6R5c8DB7pL5gw9gi9KXlzFfbdZOA.jpg') repeat;
+            animation: twinkling 200s infinite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            color: #d1e8ff;
+        }
+
+        @keyframes twinkling {
+            from { background-position: 0 0; }
+            to { background-position: -10000px 5000px; }
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 2rem;
+            max-width: 90%;
+            margin: 2rem auto;
+        }
+
+        .poem-container, .side-text {
+            background-color: #1a1a2e;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 112, 192, 0.7);
+            padding: 2rem;
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+            flex: 1 1 45%;
+            max-width: 45%;
+        }
+
+        .poem-container {
+            text-align: center;
+            line-height: 1.8;
+        }
+
+        .side-text {
+            font-size: 1.1em;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+
+        .dedicatoria {
+            color: #73a9ff;
+            text-align: center;
+            font-style: italic;
+            font-size: 1.2em;
+            margin-bottom: 1rem;
+            padding: 1rem;
+            background-color: #1a1a2e;
+            border-radius: 10px;
+            box-shadow: 0 0 5px rgba(0, 112, 192, 0.7);
+            max-width: 600px;
+        }
+    </style>
 </head>
 <body>
-    <div class="clouds"></div>
-
-    
     <div class="dedicatoria">
         <p>“Escribí esto inspirado en alguien que me hace sentir como cuando era niño, alguien a quien admiro. Espero te guste…”</p>
     </div>
 
-    
-    <div class="poem-container">
-        <h1>Mi Estrellita</h1>
-        <p>
-            No es mía,<br>
-            y tal vez nunca lo sea,<br>
-            pero ahí está,<br>
-            con su piel de clavel y esa sonrisa<br>
-            que desarma al mundo entero,<br>
-            como si supiera que en un solo gesto<br>
-            puede dejarme temblando.<br><br>
+    <div class="content">
+        <div class="poem-container">
+            <h1>Mi Estrellita</h1>
+            <p>
+                No es mía,<br>
+                y tal vez nunca lo sea,<br>
+                pero ahí está,<br>
+                con su piel de clavel y esa sonrisa<br>
+                que desarma al mundo entero,<br>
+                como si supiera que en un solo gesto<br>
+                puede dejarme temblando.<br><br>
 
-            La veo, y de repente soy ese niño<br>
-            que alguna vez fui,<br>
-            corriendo en bicicleta a toda velocidad,<br>
-            sin miedo a caer,<br>
-            sin importarme las heridas<br>
-            porque en ese momento,<br>
-            lo único que importaba<br>
-            era sentir el viento en la cara.<br><br>
+                La veo, y de repente soy ese niño<br>
+                que alguna vez fui,<br>
+                corriendo en bicicleta a toda velocidad,<br>
+                sin miedo a caer,<br>
+                sin importarme las heridas<br>
+                porque en ese momento,<br>
+                lo único que importaba<br>
+                era sentir el viento en la cara.<br><br>
 
-            Es así cada vez que la veo,<br>
-            como esa caída inevitable<br>
-            que duele pero también hace reír,<br>
-            esa mezcla de adrenalina y torpeza<br>
-            de no saber cómo acercarme,<br>
-            de querer ser quien le saque una sonrisa<br>
-            o, al menos, una mirada de esas<br>
-            que no se borran tan fácil.<br><br>
+                Es así cada vez que la veo,<br>
+                como esa caída inevitable<br>
+                que duele pero también hace reír,<br>
+                esa mezcla de adrenalina y torpeza<br>
+                de no saber cómo acercarme,<br>
+                de querer ser quien le saque una sonrisa<br>
+                o, al menos, una mirada de esas<br>
+                que no se borran tan fácil.<br><br>
 
-            Mi estrellita,<br>
-            yo sé que tiene sus propios caminos,<br>
-            como los gatos que la siguen,<br>
-            que no dejan que nadie los atrape,<br>
-            que son libres, ariscos,<br>
-            pero saben dónde quieren estar.<br><br>
+                Mi estrellita,<br>
+                yo sé que tiene sus propios caminos,<br>
+                como los gatos que la siguen,<br>
+                que no dejan que nadie los atrape,<br>
+                que son libres, ariscos,<br>
+                pero saben dónde quieren estar.<br><br>
 
-            Y aquí estoy yo,<br>
-            mirándola desde lejos,<br>
-            esperando que algún día,<br>
-            quizá,<br>
-            me vea como ese niño tonto<br>
-            que no teme las caídas,<br>
-            y que solo quiere volver a reír<br>
-            al rodar por el suelo,<br>
-            siempre y cuando ella esté cerca,<br>
-            como una estrella que ilumina<br>
-            las noches más oscuras.<br>
-        </p>
+                Y aquí estoy yo,<br>
+                mirándola desde lejos,<br>
+                esperando que algún día,<br>
+                quizá,<br>
+                me vea como ese niño tonto<br>
+                que no teme las caídas,<br>
+                y que solo quiere volver a reír<br>
+                al rodar por el suelo,<br>
+                siempre y cuando ella esté cerca,<br>
+                como una estrella que ilumina<br>
+                las noches más oscuras.<br>
+            </p>
+        </div>
+
+        <div class="side-text">
+            <p>
+                Моя дорогая звездочка,<br><br>
+                Когда я думаю о тебе, я вижу, как твоя страсть к учебе и знаниям такая же бесконечная и естественная, как кошка, ловящая луч света на полу. Ты как этот нежный и независимый кот, полный загадок, но в то же время излучающий внутренний свет. Твоя любовь к университетской жизни, к бесконечному стремлению к знаниям, вызывает у меня восхищение, а может быть, и немного зависти. Я смотрю на тебя, полную энергии и стремлений, и не могу не задаться вопросом: где скрыта тень, которую приносит истинное познание?<br><br>
+
+                Ты, как кошка, находишь счастье в каждой детали, в каждой минуте своей учебной жизни. Но помни, милая, что настоящее знание приходит не тогда, когда мы верим в очевидное, а когда у нас хватает смелости сомневаться, искать за пределами того, что кажется простым и понятным. Иногда нам нужно отпустить даже самые яркие звезды, чтобы увидеть их настоящую красоту.<br><br>
+
+                Ты — как кошка в ночи, скрывающая свои мысли за мерцанием глаз, но я надеюсь, что ты никогда не забудешь смотреть вглубь, в тень, которая так же важна, как и свет. Пройди свой путь с открытым сердцем, задавая вопросы и не боясь неопределенности, потому что именно она ведет нас к истинным открытиям.
+            </p>
+        </div>
     </div>
 </body>
 </html>
-
