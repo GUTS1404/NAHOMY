@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Estrellita</title>
     <style>
+      
         body {
-            font-family: 'Georgia', serif;
+            font-family: 'Georgia', 'Times New Roman', serif;
             background: #0a0a0a url('https://t4.ftcdn.net/jpg/02/43/75/73/240_F_243757367_gBpS6R5c8DB7pL5gw9gi9KXlzFfbdZOA.jpg') repeat;
             animation: twinkling 200s infinite;
             display: flex;
@@ -23,6 +24,7 @@
             to { background-position: -10000px 5000px; }
         }
 
+     
         .content {
             display: flex;
             flex-wrap: wrap;
@@ -73,12 +75,97 @@
             box-shadow: 0 0 5px rgba(0, 112, 192, 0.7);
             max-width: 600px;
         }
+
+        
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            .poem-container, .side-text {
+                max-width: 100%;
+                flex: 1 1 100%;
+            }
+            h1 {
+                font-size: 1.5em;
+            }
+        }
+
+       
+        .russian-text {
+            font-style: italic;
+            color: #d1e8ff;
+        }
+
+        .translation {
+            font-weight: bold;
+            font-size: 0.9em;
+            color: #73a9ff;
+            margin-top: 1rem;
+        }
+
+        
+        .soundcloud-player {
+            width: 100%;
+            max-width: 700px;
+            height: 166px;
+            margin-top: 2rem;
+        }
+
+       
+        .story-container {
+            background-color: #1a1a2e;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 0 10px rgba(0, 112, 192, 0.7);
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+            margin-top: 2rem;
+            max-width: 80%;
+            color: #d1e8ff;
+            line-height: 1.8;
+            text-align: justify;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 1.1em;
+        }
+
+       
+        .story-container h2 {
+            text-align: center;
+            font-size: 1.8em;
+            color: #73a9ff;
+            margin-bottom: 1.5rem;
+        }
+
+        .image-space {
+            position: absolute;
+            top: 20%; 
+            left: 5%; 
+            width: 300px;
+            height: auto;
+            box-shadow: 0 0 10px rgba(0, 112, 192, 0.7);
+            border-radius: 10px;
+        }
+
+        .image-space img {
+            width: 100%;
+            height: auto;
+            border-radius: inherit;
+        }
     </style>
 </head>
 <body>
+
+    <iframe class="soundcloud-player" 
+        src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/user-119323907/guts-theme-with-thunderstorm?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" 
+        frameborder="0" 
+        allow="autoplay"></iframe>
+
     <div class="dedicatoria">
         <p>“Escribí esto inspirado en alguien que me hace sentir como cuando era niño, alguien a quien admiro. Espero te guste…”</p>
     </div>
+
 
     <div class="content">
         <div class="poem-container">
@@ -131,16 +218,168 @@
             </p>
         </div>
 
+        <div class="story-container">
+            <h2>La Última Guerra</h2>
+            <p>
+                La ciudad era un campo de batalla silencioso,<br>
+                las luces de los edificios titilaban como llamas moribundas,<br>
+                y las calles, mojadas por la lluvia, eran el último reflejo<br>
+                de todo lo que habíamos perdido.<br>
+                Ella caminaba, como siempre, con una quietud rara,<br>
+                como si la guerra ya hubiera terminado,<br>
+                pero el eco de las explosiones siguiera resonando en su cuerpo.<br><br>
+        
+                No sé por qué me la encontré,<br>
+                tal vez el destino tenía hambre esa noche,<br>
+                o tal vez fuimos nosotros los que nos elegimos<br>
+                sin saberlo.<br>
+                Pero ahí estaba,<br>
+                como un espejismo que se convierte en carne,<br>
+                un suspiro que deja de serlo<br>
+                cuando te das cuenta de que ya no puedes escapar.<br><br>
+        
+                El viento soplaba entre sus cabellos,<br>
+                y en sus ojos había una calma extraña,<br>
+                como si el caos nunca la hubiera tocado.<br>
+                Pero no me engañaba.<br>
+                Yo la veía, la veía más allá de su sonrisa tímida,<br>
+                en el fondo de sus pupilas donde todo se pierde y se olvida,<br>
+                como si el pasado la persiguiera<br>
+                y la muerte no fuera más que una amiga que no la dejaría en paz.<br><br>
+        
+                Yo también tenía mis demonios,<br>
+                caminaba con ellos como si fueran una segunda piel.<br>
+                El peso de una vida rota<br>
+                era más pesado que cualquier espada,<br>
+                pero seguía arrastrándome,<br>
+                como un perro viejo que no sabe cuándo dejar de morder.<br><br>
+        
+                Nos cruzamos sin más,<br>
+                como dos sombras que se reconocen<br>
+                en medio de la niebla.<br>
+                No nos dijimos nada,<br>
+                y sin embargo, sabíamos todo.<br>
+                Ella me vio como si conociera mis huellas<br>
+                antes de que las dejara,<br>
+                y yo la vi como si hubiera estado esperando<br>
+                el momento exacto en que el tiempo la alcanzara.<br><br>
+        
+                Era algo entre el silencio y el grito,<br>
+                una guerra que no se libraba con espadas,<br>
+                sino con miradas que se esquivaban,<br>
+                con palabras que nunca salían<br>
+                por miedo a que el mundo se desmoronara<br>
+                con su simple pronunciamiento.<br><br>
+        
+                Y así nos fuimos,<br>
+                caminando juntos,<br>
+                pero cada uno con su propia guerra,<br>
+                sin tocarnos,<br>
+                sin nada más que un vacío que se compartía<br>
+                y se multiplicaba.<br>
+                A veces, el tiempo es un enemigo silencioso,<br>
+                que te abraza cuando menos lo esperas<br>
+                y te arrastra a un rincón<br>
+                donde las batallas ya no importan.<br><br>
+        
+                Quizás nunca entendí lo que ella buscaba,<br>
+                ni ella lo que yo quería,<br>
+                pero estábamos ahí,<br>
+                en medio de un campo de escombros,<br>
+                donde todo lo que quedaba<br>
+                era el recuerdo de las guerras perdidas.
+            </p>
+        </div>
+        
         <div class="side-text">
             <p>
-                Моя дорогая звездочка,<br><br>
+                <strong>A Estrellita, la felina</strong><br><br>
+
+                Te veo en tus tardes tranquilas,<br>
+                entre libros y café,<br>
+                como si el mundo fuera solo un reflejo<br>
+                de lo que sueñas en silencio.<br>
+                Tus manos acarician el papel,<br>
+                y en tus ojos hay dos estrellas<br>
+                que aún no se han atrevido a brillar.<br><br>
+
+                Felina, con esa risa tímida<br>
+                que se esconde tras las páginas<br>
+                de los mangas que tanto te gustan,<br>
+                como si las historias pudieran darte<br>
+                lo que a veces la vida no te ha dado.<br>
+                Quizá sea el chocolate,<br>
+                ese dulce consuelo de los días grises,<br>
+                o las flores que te acompañan,<br>
+                como un perfume que se queda<br>
+                en el aire de tu habitación.<br><br>
+
+                Tu alma es un viaje sin mapa,<br>
+                pero no te preocupes,<br>
+                porque en cada paso que das<br>
+                encuentras un poco de ti misma.<br>
+                A veces imaginas Grecia,<br>
+                con sus ruinas antiguas<br>
+                y sus cielos que parecen abrazar el mar.<br>
+                O Londres,<br>
+                con sus calles empedradas<br>
+                y la lluvia que te hace pensar<br>
+                en los días que vendrán.<br>
+                Pero lo cierto es que,<br>
+                más allá de esos destinos,<br>
+                ya estás viajando<br>
+                en los laberintos de tu propio ser.<br><br>
+
+                Bailas con una libertad<br>
+                que me conmueve,<br>
+                como si el mundo no fuera más<br>
+                que un escenario donde tú decides<br>
+                qué papel interpretar.<br>
+                Y sé que aunque tus pasos<br>
+                se pierdan entre las sombras,<br>
+                siempre habrá algo en ti<br>
+                que sigue brillando.<br>
+                Porque tú no eres solo Estrellita,<br>
+                eres un universo entero<br>
+                de sueños, gatos, libros y canciones<br>
+                que a veces, en medio del silencio,<br>
+                te hacen sentir que todo es posible.<br><br>
+
+                Felina,<br>
+                sé que no te basta con lo que se ve,<br>
+                que buscas algo más<br>
+                en cada rincón,<br>
+                en cada palabra,<br>
+                en cada pensamiento<br>
+                que nadie entiende.<br>
+                Pero lo encuentras,<br>
+                y sigues buscando,<br>
+                como si el único destino<br>
+                que te quedara por recorrer<br>
+                fuera el que se guarda en los gestos<br>
+                que aún no has hecho.<br><br>
+
+                <strong class="russian-text">Моя дорогая звездочка,</strong><br><br>
+
                 Когда я думаю о тебе, я вижу, как твоя страсть к учебе и знаниям такая же бесконечная и естественная, как кошка, ловящая луч света на полу. Ты как этот нежный и независимый кот, полный загадок, но в то же время излучающий внутренний свет. Твоя любовь к университетской жизни, к бесконечному стремлению к знаниям, вызывает у меня восхищение, а может быть, и немного зависти. Я смотрю на тебя, полную энергии и стремлений, и не могу не задаться вопросом: где скрыта тень, которую приносит истинное познание?<br><br>
 
                 Ты, как кошка, находишь счастье в каждой детали, в каждой минуте своей учебной жизни. Но помни, милая, что настоящее знание приходит не тогда, когда мы верим в очевидное, а когда у нас хватает смелости сомневаться, искать за пределами того, что кажется простым и понятным. Иногда нам нужно отпустить даже самые яркие звезды, чтобы увидеть их настоящую красоту.<br><br>
 
-                Ты — как кошка в ночи, скрывающая свои мысли за мерцанием глаз, но я надеюсь, что ты никогда не забудешь смотреть вглубь, в тень, которая так же важна, как и свет. Пройди свой путь с открытым сердцем, задавая вопросы и не боясь неопределенности, потому что именно она ведет нас к истинным открытиям.
-            </p>
+                Ты — как кошка в ночи, скрывающая свои мысли за мерцанием глаз, но я надеюсь, что ты никогда не забудешь смотреть вглубь, в тень, которая так же важна, как и свет. Пройди свой путь с открытым сердцем, задавая вопросы и не боясь неопределенности, потому что именно она ведет нас к истинным открытиям.<br><br>
+
+                <span class="translation">(Mi querida Estrellita),<br><br>
+                    Cuando pienso en ti, veo cómo tu pasión por el estudio y el conocimiento es tan infinita y natural como un gato persiguiendo un rayo de luz en el suelo. Eres como este gato tierno e independiente, lleno de misterios, pero a la vez irradiando una luz interna. Tu amor por la vida universitaria y tu eterno deseo de saber me asombran, y quizás me provoque un poco de envidia. Te observo, llena de energía y aspiraciones, y no puedo evitar preguntarme: ¿dónde se esconde la sombra que trae el verdadero conocimiento?<br><br>
+
+                    Eres como un gato que encuentra felicidad en cada detalle, en cada minuto de tu vida universitaria. Pero recuerda, querida, que el verdadero conocimiento no llega cuando creemos en lo evidente, sino cuando tenemos el coraje de dudar, de buscar más allá de lo que parece simple y comprensible. A veces, necesitamos dejar ir incluso las estrellas más brillantes para ver su verdadera belleza.<br><br>
+    
+                    Eres como un gato en la noche, ocultando tus pensamientos tras el brillo de tus ojos, pero espero que nunca olvides mirar en lo profundo, en la sombra que es tan importante como la luz. Recorrerás tu camino con un corazón abierto, haciendo preguntas y sin miedo a la incertidumbre, porque es ella la que nos lleva a los descubrimientos verdaderos.
+                </p>
+            </div> 
         </div>
-    </div>
-</body>
+        <div class="image-space">
+            <img src="https://preview.redd.it/my-cat-guts-v0-j0sk2luzpnac1.jpeg?auto=webp&s=e4cea32e4766f10a3fb2300b62a3f6ebaad37eca" alt="Imagen de gato" />
+        </div>
+    </body>
+    </html>
+    </body>
 </html>
