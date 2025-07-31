@@ -1,136 +1,143 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Última Guerra </title>
-    <style>
-        body {
-            font-family: 'Georgia', 'Times New Roman', serif;
-            background: #0a0a0a url('https://t4.ftcdn.net/jpg/02/43/75/73/240_F_243757367_gBpS6R5c8DB7pL5gw9gi9KXlzFfbdZOA.jpg') repeat;
-            animation: twinkling 200s infinite;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 0;
-            color: #d1e8ff;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mi Estrellita - La Última Guerra</title>
+  <style>
+    body {
+      font-family: 'Georgia', 'Times New Roman', serif;
+      background: #0a0a0a url('https://t4.ftcdn.net/jpg/02/43/75/73/240_F_243757367_gBpS6R5c8DB7pL5gw9gi9KXlzFfbdZOA.jpg') repeat;
+      animation: twinkling 200s infinite;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: start;
+      min-height: 100vh;
+      margin: 0;
+      color: #d1e8ff;
+      padding: 2rem;
+    }
 
-        @keyframes twinkling {
-            from { background-position: 0 0; }
-            to { background-position: -10000px 5000px; }
-        }
+    @keyframes twinkling {
+      from { background-position: 0 0; }
+      to { background-position: -10000px 5000px; }
+    }
 
-        h1 {
-            text-align: center;
-            font-size: 2.2em;
-            color: #73a9ff;
-            margin: 2rem 1rem 1rem;
-        }
+    .dedicatoria {
+      color: #73a9ff;
+      text-align: center;
+      font-style: italic;
+      font-size: 1.2em;
+      margin-bottom: 2rem;
+      padding: 1rem;
+      background-color: #1a1a2e;
+      border-radius: 10px;
+      box-shadow: 0 0 5px rgba(0, 112, 192, 0.7);
+      max-width: 600px;
+    }
 
-        h1 small {
-            display: block;
-            font-size: 0.6em;
-            color: #d1e8ff;
-        }
+    h1 {
+      font-size: 2em;
+      color: #ffffff;
+      margin-bottom: 0.5rem;
+      text-align: center;
+    }
 
-        .dedicatoria {
-            color: #73a9ff;
-            text-align: center;
-            font-style: italic;
-            font-size: 1.2em;
-            margin: 1rem 2rem;
-            padding: 1rem;
-            background-color: #1a1a2e;
-            border-radius: 10px;
-            box-shadow: 0 0 5px rgba(0, 112, 192, 0.7);
-            max-width: 600px;
-        }
+    h1 small {
+      display: block;
+      font-size: 0.6em;
+      color: #73a9ff;
+    }
 
-        .soundcloud-player {
-            width: 100%;
-            max-width: 700px;
-            height: 166px;
-            margin-top: 2rem;
-        }
+    .soundcloud-player {
+      width: 100%;
+      max-width: 700px;
+      height: 166px;
+      margin: 2rem auto;
+      border: none;
+    }
 
-        .bloque {
-            background-color: #1a1a2e;
-            border-radius: 10px;
-            padding: 1.5rem;
-            margin: 1rem auto;
-            width: 90%;
-            max-width: 900px;
-            box-shadow: 0 0 10px rgba(0, 112, 192, 0.7);
-            opacity: 0;
-            animation: fadeIn 2s forwards;
-        }
+    .bloque {
+      background-color: #1a1a2e;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 112, 192, 0.7);
+      padding: 2rem;
+      margin: 1.5rem 0;
+      width: 100%;
+      max-width: 900px;
+      animation: fadeIn 2s forwards;
+      opacity: 0;
+    }
 
-        .verso {
-            margin: 0.5rem 0;
-            line-height: 1.8;
-        }
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
 
-        @keyframes fadeIn {
-            to { opacity: 1; }
-        }
+    .verso {
+      margin: 0.5rem 0;
+      line-height: 1.8;
+      font-size: 1.1em;
+    }
 
-        @media (max-width: 768px) {
-            .bloque {
-                padding: 1rem;
-            }
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 1.5em;
+      }
 
-            .soundcloud-player {
-                height: 120px;
-            }
+      .bloque {
+        padding: 1.5rem;
+      }
 
-            h1 {
-                font-size: 1.6em;
-            }
-        }
-    </style>
+      .verso {
+        font-size: 1em;
+      }
+    }
+  </style>
 </head>
 <body>
 
-    <iframe class="soundcloud-player" 
-        src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/user-119323907/guts-theme-with-thunderstorm?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" 
-        frameborder="0" 
-        allow="autoplay">
-    </iframe>
+  <iframe class="soundcloud-player" 
+    src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/user-119323907/guts-theme-with-thunderstorm?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" 
+    allow="autoplay">
+  </iframe>
 
-    <div class="dedicatoria">
-        <p>“Escribí esto inspirado en alguien que me hace sentir como cuando era niño, alguien a quien admiro. Espero te guste…”</p>
-    </div>
+  <div class="dedicatoria">
+    “Escribí esto inspirado en alguien que me hace sentir como cuando era niño, alguien a quien admiro. Espero te guste…”
+  </div>
 
-    <h1>La Última Guerra<br></small></h1>
+  <h1>La Última Guerra<br><small>(Final Feliz)</small></h1>
 
-    <div class="bloque">
-        <div class="verso">La ciudad era un campo de batalla silencioso,</div>
-        <div class="verso">las luces de los edificios titilaban como llamas moribundas,</div>
-        <div class="verso">y las calles, mojadas por la lluvia, eran el último reflejo</div>
-        <div class="verso">de todo lo que habíamos perdido.</div>
-        <div class="verso">Ella caminaba, como siempre, con una quietud rara,</div>
-        <div class="verso">como si la guerra ya hubiera terminado,</div>
-        <div class="verso">pero el eco de las explosiones siguiera resonando en su cuerpo.</div>
-    </div>
+  <!-- BLOQUES DEL POEMA -->
+  <div class="bloque">
+    <div class="verso">La ciudad era un campo de batalla silencioso,</div>
+    <div class="verso">las luces de los edificios titilaban como llamas moribundas,</div>
+    <div class="verso">y las calles, mojadas por la lluvia, eran el último reflejo</div>
+    <div class="verso">de todo lo que habíamos perdido.</div>
+    <div class="verso">Ella caminaba, como siempre, con una quietud rara,</div>
+    <div class="verso">como si la guerra ya hubiera terminado,</div>
+    <div class="verso">pero el eco de las explosiones siguiera resonando en su cuerpo.</div>
+  </div>
 
-    <div class="bloque">
-        <div class="verso">No sé por qué me la encontré,</div>
-        <div class="verso">tal vez el destino tenía hambre esa noche,</div>
-        <div class="verso">o tal vez fuimos nosotros los que nos elegimos</div>
-        <div class="verso">sin saberlo.</div>
-        <div class="verso">Pero ahí estaba,</div>
-        <div class="verso">como un espejismo que se convierte en carne,</div>
-        <div class="verso">un suspiro que deja de serlo</div>
-        <div class="verso">cuando te das cuenta de que ya no puedes escapar.</div>
-    </div>
+  <div class="bloque">
+    <div class="verso">No sé por qué me la encontré,</div>
+    <div class="verso">tal vez el destino tenía hambre esa noche,</div>
+    <div class="verso">o tal vez fuimos nosotros los que nos elegimos</div>
+    <div class="verso">sin saberlo.</div>
+    <div class="verso">Pero ahí estaba,</div>
+    <div class="verso">como un espejismo que se convierte en carne,</div>
+    <div class="verso">un suspiro que deja de serlo</div>
+    <div class="verso">cuando te das cuenta de que ya no puedes escapar.</div>
+  </div>
 
-    <div class="bloque">
-        <div class="verso">Porque incluso después de la última guerra,</div>
-        <div class="verso">queda vida.</div>
-        <div class="verso">Y a veces, eso es todo lo que se necesita</div>
-        <div class="verso">para empezar de nuevo.</div>
-    </div>
+  <!-- Continúa agregando más bloques .bloque como el anterior para el resto del poema -->
+
+  <div class="bloque">
+    <div class="verso">Porque incluso después de la última guerra,</div>
+    <div class="verso">queda vida.</div>
+    <div class="verso">Y a veces, eso es todo lo que se necesita</div>
+    <div class="verso">para empezar de nuevo.</div>
+  </div>
 
 </body>
 </html>
